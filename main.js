@@ -1,16 +1,14 @@
-const buttonDataID = 'button[data-button-id="cancel"]';
-const buttonName = 'Evaluate';
-
-const modalClass = '.unregistered-dialog';
-const divChildrenOrder = 1;
-const buttonOrder = 1;
+const preferencesManager = require('./utils/preferencesManager');
 
 
 const getButtonByDataID = () => {
-    return document.querySelector(buttonDataID);
+    return document.querySelector(
+        preferencesManager.getButtonSelector()
+    );
 }
 
 const getButtonByName = () => {
+    const buttonName = preferencesManager.getButtonName();
     return document.evaluate(
         `//button[contains(., '${buttonName}')]`,
         document,
@@ -21,6 +19,10 @@ const getButtonByName = () => {
 }
 
 const getButtonByParent = () => {
+    const modalClass = preferencesManager.getParentClasses();
+    const divChildrenOrder = preferencesManager.getParrentOrderDiv();
+    const buttonOrder = preferencesManager.getParrentOrderButton();
+
     try {
         return document.querySelector(modalClass)
             .children[divChildrenOrder]
