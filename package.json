@@ -1,0 +1,22 @@
+{
+    "name": "danysmall.autoevaluate",
+    "title": "AutoEvaluate for StarUML",
+    "description": "Extension to removing unregistered dialog with evaluate button on application startup",
+    "homepage": "https://github.com/danysmall/AutoEvaluate",
+    "issues": "https://github.com/danysmall/AutoEvaluate/issues",
+    "version": "0.0.1",
+    "keywords": [
+        "AutoEvaluate",
+        "evaluate",
+        "unregistered"
+    ],
+    "author": {
+        "name": "Danila Smolyakov",
+        "email": "dany.small.work@gmail.com",
+        "url": "https://github.com/danysmall"
+    },
+    "license": "MIT",
+    "engines": {
+        "staruml": ">=3.0.0"
+    }
+}
