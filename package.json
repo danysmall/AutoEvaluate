@@ -4,7 +4,7 @@
     "description": "Extension to removing unregistered dialog with evaluate button on application startup",
     "homepage": "https://github.com/danysmall/AutoEvaluate",
     "issues": "https://github.com/danysmall/AutoEvaluate/issues",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "keywords": [
         "AutoEvaluate",
         "evaluate",
