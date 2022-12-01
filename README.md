@@ -21,4 +21,5 @@ How to install and use this extension.
 
 ## License
 This software is under `MIT License` with `Copyright (c) 2022 Danila Smolyakov`
+
 Read full license file by [this link](LICENSE)
