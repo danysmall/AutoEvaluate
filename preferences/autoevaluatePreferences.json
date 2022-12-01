@@ -1,0 +1,44 @@
+{
+    "id": "autoevaluate",
+    "name": "AutoEvaluate",
+    "schema": {
+        "autoevaluate.button": {
+            "type": "section",
+            "text": "Button settings"
+        },
+        "autoevaluate.button.selector": {
+            "text": "QuerySelector for finding button",
+            "description": "Button inner data like \"data-button-id\"",
+            "type": "string",
+            "default": "button[data-button-id=\"cancel\"]"
+        },
+        "autoevaluate.button.name": {
+            "text": "Button name",
+            "description": "Can be changed if program is not in English",
+            "type": "string",
+            "default": "Evaluate"
+        },
+        "autoevaluate.parent": {
+            "type": "section",
+            "text": "Modal dialog settings"
+        },
+        "autoevaluate.parent.classes": {
+            "text": "Classes of modal dialog",
+            "description": "Class names of modal dialog written with spaces",
+            "type": "string",
+            "default": "unregistered-dialog"
+        },
+        "autoevaluate.parent.order.div": {
+            "text": "Order of child <div> in modal with button",
+            "description": "Shouldn't be replaces if extension works",
+            "type": "number",
+            "default": "1"
+        },
+        "autoevaluate.parent.order.button": {
+            "text": "Order of \"Evaluate\" button in all buttons list",
+            "description": "Shouldn't be replaces if extension works",
+            "type": "number",
+            "default": "1"
+        }
+    }
+}
